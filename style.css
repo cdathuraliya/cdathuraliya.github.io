@@ -1,0 +1,12 @@
+img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 11px;
+}
+
+body {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-weight: 300;
+  text-align: center;
+}
