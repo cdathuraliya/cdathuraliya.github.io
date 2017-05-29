@@ -4,9 +4,46 @@ img {
   padding-top: 94px;
   padding-bottom: 11px;
 }
-
 body {
+  color: #595959;
   font-family: "Lucida Console", Monaco, monospace;
   font-weight: 300;
   text-align: center;
+}
+/* Link styles */
+a {
+  color: #2661c0;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+/* Social media icons */
+.fa {
+  background: #8c8c8c;
+  color: white !important;
+  padding: 6px;
+  font-size: 20px;
+  width: 18px;
+  text-align: center;
+  text-decoration: none !important;
+  margin: 5px 2px;
+  border-radius: 15%;
+}
+.fa:hover {
+  opacity: 0.8;
+  text-decoration: none !important;
+}
+.fa-facebook:hover {
+  background: #3B5998;
+}
+.fa-twitter:hover {
+  background: #55ACEE;
+}
+.fa-linkedin:hover {
+  background: #007bb5;
 }
