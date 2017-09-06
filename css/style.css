@@ -1,8 +1,43 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
+    position: relative;
     color: #FFFFFF;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 300;
     text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    padding-top: 46px;
+    max-width: 640px;
+    width: 94%;
+}
+
+
+/* Footer styles */
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    font-size: x-small;
+    opacity: 0.6;
 }
 
 
@@ -29,24 +64,6 @@ a:active {
     opacity: 1.0;
 }
 
-.container {
-    position: absolute;
-    width: 600px;
-    z-index: 0;
-    margin-top: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-}
-
-.footer {
-    font-family: Arial, sans-serif;
-    font-size: x-small;
-    opacity: 0.6;
-    margin-top: 70%;
-}
-
 
 /* Social media icons */
 
@@ -60,6 +77,7 @@ a:active {
     text-decoration: none !important;
     margin: 5px 2px;
     border-radius: 15%;
+    box-sizing: content-box;
 }
 
 .fa:hover {
@@ -82,7 +100,7 @@ a:active {
 }
 
 
-/* particle network animation */
+/* Particle network animation */
 
 .particle-network-animation {
     margin-left: auto;
