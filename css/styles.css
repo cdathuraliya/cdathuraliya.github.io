@@ -121,7 +121,15 @@ a.nav-link.scrolled:hover {
   opacity: 0;
   min-width: 300px;
 }
-.team {
+.team-div > .fa {
+  opacity: 0.6;
+  color: #808080 !important;
+  font-size: 25px !important;
+  text-align: center;
+  text-decoration: none !important;
+  margin: 0px 5px 0px 5px;
+}
+.team-div > .google-scholar {
   opacity: 0.6;
   color: #808080 !important;
   font-size: 25px !important;
@@ -184,7 +192,7 @@ form .form-control:focus {
   opacity: 0.9;
 }
 /* Social media icons */
-.fa {
+.footer-menu > .fa {
   background: #142333;
   opacity: 0.5;
   color: #CCCCCC !important;
@@ -193,7 +201,7 @@ form .form-control:focus {
   text-decoration: none !important;
   margin: 10px 15px 10px 0px;
 }
-.fa:hover {
+.footer-menu > .fa:hover {
   text-decoration: none !important;
   color: #FFFFFF !important;
 }
