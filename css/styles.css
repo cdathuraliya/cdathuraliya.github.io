@@ -156,11 +156,11 @@ h5.contact {
 a.contact {
   color: #E17854;
 }
-.far {
+.contact > .fa-envelope {
   font-size: 20px;
   opacity: 0.6;
 }
-.fas {
+.contact > .fa-phone {
   font-size: 25px;
   opacity: 0.6;
 }
