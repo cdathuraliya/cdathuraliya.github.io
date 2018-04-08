@@ -89,7 +89,7 @@ $(document).ready(function () {
       // If the object is completely visible in the window, fade it it
       if (bottom_of_window > bottom_of_object) {
         // To appear one after another
-        var delayTime = 1000 + (i * 1000);
+        var delayTime = 500 + (i * 500);
         $(this).animate({
           'opacity': '1'
         }, delayTime);
