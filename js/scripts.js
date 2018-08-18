@@ -95,7 +95,6 @@ $(document).ready(function () {
         }, delayTime);
       }
     });
-
     // Change navbar background on scroll https://jsfiddle.net/wamosjk/ufhp9s15/
     $('nav, .logo, .nav-link').toggleClass('scrolled', $(this).scrollTop() > 50);
     //$('.navbar').toggleClass('bg-dark bg-light', $(this).scrollTop() < 50);
@@ -117,5 +116,10 @@ $(document).ready(function () {
   // Set navbar margins on window resize
   $(window).resize(function () {
     removeNavbarMargins();
+  });
+
+  // Change menu background color on menu icon click
+  $('#menu-icon').click( function() {
+    $('.navbar-expand-md').toggleClass("menu-active");
   });
 });
