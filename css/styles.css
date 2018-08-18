@@ -4,7 +4,7 @@ html {
 }
 body {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
-  color: #808080;
+  color: #404040;
 }
 #home {
   background-color: #142333;
@@ -97,7 +97,7 @@ a.nav-link.scrolled:hover {
 }
 .section-header {
   color: #3C78D8;
-  font-weight: 300;
+  font-weight: 500;
   margin-top: 20px;
 }
 /*hr {
@@ -140,9 +140,9 @@ a.nav-link.scrolled:hover {
 .team-div {
   min-width: 300px;
 }
-.team-pic {
+/*.team-pic {
   opacity: 0.85;
-}
+}*/
 .google-scholar {
   margin-bottom: 4px;
 }
@@ -151,7 +151,7 @@ a.nav-link.scrolled:hover {
 }
 h5.contact {
   margin-bottom: 12px;
-  font-weight: 300;
+  font-weight: 500;
 }
 a.contact {
   color: #E17854;
@@ -204,6 +204,9 @@ form .form-control:focus {
 .footer-menu > .fa:hover {
   text-decoration: none !important;
   color: #FFFFFF !important;
+}
+.footer-locations {
+  color: #CCCCCC !important;
 }
 
 .copyright {
