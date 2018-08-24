@@ -57,7 +57,6 @@ window.onload = function () {
   document.body.appendChild(css);
 }
 
-
 $(document).ready(function () {
   // Add smooth scrolling to menu links
   $("a").on('click', function (event) {
@@ -72,7 +71,6 @@ $(document).ready(function () {
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function () {
-
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -99,23 +97,6 @@ $(document).ready(function () {
     $('nav, .logo, .nav-link').toggleClass('scrolled', $(this).scrollTop() > 50);
     //$('.navbar').toggleClass('bg-dark bg-light', $(this).scrollTop() < 50);
     $('.navbar').toggleClass('navbar-dark navbar-light', $(this).scrollTop() < 50);
-  });
-  // Function to set navbar margins
-  function removeNavbarMargins() {
-    // Check toggler icon status
-    if ($("#collapsible-navbar").is(":hidden")) {
-      $(".navbar-brand").css("margin-left", "0%");
-      $(".navbar-collapse").css("margin-right", "0%");
-    } else {
-      $(".navbar-brand").css("margin-left", "16.66%");
-      $(".navbar-collapse").css("margin-right", "16.66%");
-    }
-  }
-  // Set navbar margins on load
-  removeNavbarMargins();
-  // Set navbar margins on window resize
-  $(window).resize(function () {
-    removeNavbarMargins();
   });
 
   // Change menu background color on menu icon click
