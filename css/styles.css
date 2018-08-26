@@ -113,10 +113,16 @@ a.nav-link.scrolled:hover {
   height: 614px;
   width: 100%;
 }
+#cookie-policy .particles-js-canvas-el {
+  height: 314px;
+}
 .slogan-container-parent {
   position: relative;
   min-height: 500px;
   margin-top: 60px;
+}
+#cookie-policy .slogan-container-parent {
+  min-height: 200px;
 }
 .slogan-container {
   position: absolute;
@@ -133,6 +139,9 @@ a.nav-link.scrolled:hover {
   font-size: 8.1vmin;
   font-weight: 200;
   color: #FFFFFF;
+}
+#cookie-policy .slogan {
+  font-size: 6.1vmin;
 }
 .slogan.domains {
   color: #E8987D;

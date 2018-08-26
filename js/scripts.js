@@ -58,8 +58,9 @@ window.onload = function () {
 }
 
 $(document).ready(function () {
+
   // Add smooth scrolling to menu links
-  $("a").on('click', function (event) {
+  $("a.home-page").on('click', function (event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -69,13 +70,30 @@ $(document).ready(function () {
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top - 70 // 70px offset to show the section title covered by navbar
       }, 800, function () {
         // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+        //window.location.hash = hash;
       });
     } // End if
   });
+
+  // https://stackoverflow.com/a/46673487
+  if (window.location.hash)
+    scroll(0, 0);
+  // takes care of some browsers issue
+  setTimeout(function(){scroll(0, 0);}, 1);
+
+  // if we have anchor on the url (calling from other page)
+  if(window.location.hash){
+    // smooth scroll to the anchor ID
+    $('html, body').animate({
+      scrollTop: $(window.location.hash).offset().top - 70 // 70px offset to show the section title covered by navbar
+    }, 800, function () {
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      //window.location.hash = hash;
+    });
+  }
 
   // Appear work one scroll
   // https://codepen.io/annalarson/pen/GesqK
