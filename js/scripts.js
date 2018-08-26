@@ -64,11 +64,10 @@ $(document).ready(function () {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
-      event.preventDefault();
+      //event.preventDefault();
       // Store hash
       var hash = this.hash;
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      // Use jQuery animate() to add smooth page scroll. 800 (optional) specifies scroll time in milliseconds
       $('html, body').animate({
         scrollTop: $(hash).offset().top - 70 // 70px offset to show the section title covered by navbar
       }, 800, function () {
@@ -89,10 +88,7 @@ $(document).ready(function () {
     // smooth scroll to the anchor ID
     $('html, body').animate({
       scrollTop: $(window.location.hash).offset().top - 70 // 70px offset to show the section title covered by navbar
-    }, 800, function () {
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      //window.location.hash = hash;
-    });
+    }, 800);
   }
 
   // Appear work one scroll
