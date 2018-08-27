@@ -57,10 +57,10 @@ window.onload = function () {
   document.body.appendChild(css);
 }
 
-$(document).ready(function () {
-
+// Function to run other navbar and footer scripts once they are loaded from common.html
+function addMenuFunctions() {
   // Add smooth scrolling to menu links
-  $("a.home-page").on('click', function (event) {
+  $("#home-page a").on('click', function (event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -75,6 +75,23 @@ $(document).ready(function () {
         //window.location.hash = hash;
       });
     } // End if
+  });
+}
+
+$(document).ready(function () {
+  $(function(){
+    // Run other navbar and footer scripts once they are loaded from common.html
+    // https://stackoverflow.com/a/4450861
+    $("#navbar-placeholder").load("common.html #navbar-content", function() {
+      addMenuFunctions();
+      // Change menu background color on menu icon click
+      $('#menu-icon').click( function() {
+        $('.navbar-expand-md').toggleClass("menu-active");
+      });
+    });
+    $("#footer-placeholder").load("common.html #footer-content", function() {
+      addMenuFunctions();
+    });
   });
 
   // https://stackoverflow.com/a/46673487
@@ -111,10 +128,5 @@ $(document).ready(function () {
     $('nav, .logo, .nav-link').toggleClass('scrolled', $(this).scrollTop() > 50);
     //$('.navbar').toggleClass('bg-dark bg-light', $(this).scrollTop() < 50);
     $('.navbar').toggleClass('navbar-dark navbar-light', $(this).scrollTop() < 50);
-  });
-
-  // Change menu background color on menu icon click
-  $('#menu-icon').click( function() {
-    $('.navbar-expand-md').toggleClass("menu-active");
   });
 });
