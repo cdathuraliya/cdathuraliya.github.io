@@ -176,6 +176,11 @@ a.nav-link.scrolled:hover {
   opacity: 0;
   min-width: 300px;
 }
+.carousel-indicators li {
+  height: 14px;
+  width: 14px;
+  border-radius: 7px !important;
+}
 .team-div > .fa {
   opacity: 0.6;
   color: #808080 !important;
