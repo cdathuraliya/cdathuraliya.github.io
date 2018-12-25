@@ -151,8 +151,8 @@ a.nav-link.scrolled:hover {
   font-weight: 300;
 }
 .section-header {
+  font-family: 'Montserrat', sans-serif;
   color: #3C78D8;
-  font-weight: 500;
   margin-top: 20px;
 }
 /*hr {
