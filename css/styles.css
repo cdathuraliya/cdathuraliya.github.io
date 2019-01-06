@@ -176,10 +176,28 @@ a.nav-link.scrolled:hover {
   opacity: 0;
   min-width: 300px;
 }
+/* Position carousel indicators */
+.carousel-indicators {
+  bottom: -0px;
+}
 .carousel-indicators li {
-  height: 14px;
-  width: 14px;
-  border-radius: 7px !important;
+  height: 12px;
+  width: 12px;
+  border-radius: 6px !important;
+  background-color:#f2f2f2;
+}
+.carousel-indicators .active {
+  background-color: #e6e6e6;
+}
+/* Position carousel indicators */
+.carousel-inner {
+  margin-bottom: 0px;
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23e6e6e6' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23e6e6e6' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 .team-div > .fa {
   opacity: 0.6;
@@ -272,19 +290,18 @@ Attribution required
   }
 }
 
-h5.contact {
+p.contact {
   margin-bottom: 12px;
-  font-weight: 500;
 }
 a.contact {
   color: #E17854;
 }
 .contact > .fa-envelope {
-  font-size: 20px;
+  font-size: 15px;
   opacity: 0.6;
 }
 .contact > .fa-phone {
-  font-size: 25px;
+  font-size: 20px;
   opacity: 0.6;
 }
 /* Form styles */
