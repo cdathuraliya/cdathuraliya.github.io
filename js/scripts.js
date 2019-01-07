@@ -91,6 +91,8 @@ $(document).ready(function () {
     });
     $("#footer-placeholder").load("common.html #footer-content", function() {
       addMenuFunctions();
+      // Update copyright year
+      $("#copyright-year").text(new Date().getFullYear());
     });
   });
 
