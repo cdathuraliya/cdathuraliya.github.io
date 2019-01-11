@@ -82,14 +82,14 @@ $(document).ready(function () {
   $(function(){
     // Run other navbar and footer scripts once they are loaded from common.html
     // https://stackoverflow.com/a/4450861
-    $("#navbar-placeholder").load("common.html #navbar-content", function() {
+    $("#navbar-placeholder").load("/common.html #navbar-content", function() {
       addMenuFunctions();
       // Change menu background color on menu icon click
       $('#menu-icon').click( function() {
         $('.navbar-expand-md').toggleClass("menu-active");
       });
     });
-    $("#footer-placeholder").load("common.html #footer-content", function() {
+    $("#footer-placeholder").load("/common.html #footer-content", function() {
       addMenuFunctions();
       // Update copyright year
       $("#copyright-year").text(new Date().getFullYear());

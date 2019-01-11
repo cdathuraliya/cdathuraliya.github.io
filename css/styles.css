@@ -313,6 +313,10 @@ form .form-control:focus {
   box-shadow: none;
 }
 
+.blog-date {
+  font-size: small;
+}
+
 .footer {
   position: relative;
   left: 0;
