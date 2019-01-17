@@ -358,7 +358,7 @@ form .form-control:focus {
 }
 
 /* Styles for demo pages */
-iframe {
+iframe.demo {
   position: absolute;
   height: 100%;
   width: 100%;
