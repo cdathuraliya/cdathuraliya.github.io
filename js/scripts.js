@@ -110,11 +110,11 @@ $(document).ready(function () {
     }, 800);
   }
 
-  // Appear work one scroll
+  // Appear work on scroll
   // https://codepen.io/annalarson/pen/GesqK
   $(window).scroll(function () {
     // Check the location of each desired element
-    $('.work-div').each(function (i) {
+    /*$('.work-div').each(function (i) {
       var bottom_of_object = $(this).position().top + $(this).outerHeight();
       var bottom_of_window = $(window).scrollTop() + $(window).height();
       // If the object is completely visible in the window, fade it it
@@ -125,7 +125,7 @@ $(document).ready(function () {
           'opacity': '1'
         }, delayTime);
       }
-    });
+    });*/
     // Change navbar background on scroll https://jsfiddle.net/wamosjk/ufhp9s15/
     $('nav, .logo, .nav-link').toggleClass('scrolled', $(this).scrollTop() > 50);
     //$('.navbar').toggleClass('bg-dark bg-light', $(this).scrollTop() < 50);

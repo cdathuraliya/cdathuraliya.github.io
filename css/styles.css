@@ -173,7 +173,7 @@ a.nav-link.scrolled:hover {
   margin-bottom: 4vh;
 }
 .work-div {
-  opacity: 0;
+  /*opacity: 0;*/
   min-width: 300px;
 }
 /* Position carousel indicators */
