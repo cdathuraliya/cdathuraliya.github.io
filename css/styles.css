@@ -8,6 +8,7 @@ body {
 }
 #home {
   background-color: #142333;
+  background-image: radial-gradient(#1d3249, #142333 50%);
 }
 .logo {
   font-family: 'Abel', 'Helvetica Neue', Arial, sans-serif;
