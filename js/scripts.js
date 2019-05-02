@@ -132,29 +132,50 @@ $(document).ready(function () {
     $('.navbar').toggleClass('navbar-dark navbar-light', $(this).scrollTop() < 50);
   });
 
-  // Multi-item carousel scripts
-  // https://www.codeply.com/go/s3I9ivCBYH
-  $('#news-carousel').on('slide.bs.carousel', function (e) {
-    /*
-    CC 2.0 License Iatek LLC 2018
-    Attribution required
-    */
-    var $e = $(e.relatedTarget);
-    var idx = $e.index();
-    var itemsPerSlide = 3;
-    var totalItems = $('#news-carousel .carousel-item').length;
-
-    if (idx >= totalItems - (itemsPerSlide - 1)) {
-      var it = itemsPerSlide - (totalItems - idx);
-      for (var i = 0; i < it; i++) {
-        // Append slides to the end
-        if (e.direction == "left") {
-          $('#news-carousel .carousel-item').eq(i).appendTo('#news-carousel .carousel-inner');
-        } else {
-          $('#news-carousel .carousel-item').eq(0).appendTo('#news-carousel .carousel-inner');
-        }
+  // Carousel scripts
+  // https://codepen.io/peshoto/pen/yxewzg
+  $('#blog-carousel .owl-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 20,
+    autoplay: true,
+    dotsEach: true,
+    mouseDrag: false
+  });
+  $('#news-carousel .owl-carousel').owlCarousel({
+    loop: true,
+    margin: 20,
+    autoplay: true,
+    dotsEach: true,
+    mouseDrag: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
       }
     }
   });
-
+  $('#clients-carousel .owl-carousel').owlCarousel({
+    loop: true,
+    margin: 20,
+    autoplay: true,
+    dots: false,
+    mouseDrag: false,
+    nav: true,
+    navText: [
+      '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+      '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+    ],
+    navContainer: '.carousel-container .custom-nav',
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      }
+    }
+  });
 });
