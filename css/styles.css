@@ -3,7 +3,7 @@ html {
   min-height: 100%;
 }
 body {
-  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   color: #404040;
 }
 #home {
@@ -11,7 +11,7 @@ body {
   background-image: radial-gradient(#1d3249, #142333 50%);
 }
 .logo {
-  font-family: 'Abel', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Abel', sans-serif;
   font-size: 35px;
   color: #FFFFFF;
 }
@@ -140,19 +140,22 @@ a.nav-link.scrolled:hover {
   right: 0;
 }
 .slogan {
+  font-family: 'Roboto', sans-serif;
   font-size: 8.1vmin;
-  font-weight: 200;
+  font-weight: 300;
   color: #FFFFFF;
 }
 #cookie-policy .slogan {
   font-size: 6.1vmin;
 }
 .domains {
-  color: #E8987D;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  color: #E8987D;
 }
 .section-header {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   color: #3C78D8;
   margin-top: 20px;
 }
