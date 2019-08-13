@@ -251,6 +251,10 @@ a.contact {
   font-size: 20px;
   opacity: 0.6;
 }
+a.plain {
+  color: inherit;
+  text-decoration: none;
+}
 /* Form styles */
 form .btn {
   border-radius: 0 !important;
