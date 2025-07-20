@@ -26,7 +26,7 @@
         <!-- Custom styles -->
         <link rel="stylesheet" href="/styles.css">
         <title>
-            Notes - CD Athuraliya
+            Online prediction and model pipelining for Google BERT - CD Athuraliya
         </title>
     </head>
     <body>
@@ -35,41 +35,22 @@
 
             <p><small><a href="/">home</a>&emsp;&emsp;&emsp;<a href="/notes/">notes</a></small></p>
 
-            <h1>Do we need history in the age of AI?</h1>
-
-            <p><small>July 18, 2025</small></p>
-
-            <p>There&rsquo;s been some talk about education reforms and updates to the school syllabus in Sri Lanka. Regardless of <a href="https://www.newswire.lk/2025/07/17/pm-responds-to-reports-on-history-subject/" target="_blank">how accurate that news is</a>, it has sparked a conversation about the importance of learning subjects like history. I&rsquo;m not an expert in education or history, but as someone who has worked in AI for a while, I have a few thoughts.</p>
-
-            <p><a href="/notes/do-we-need-history-in-the-age-of-ai/">Continue reading&mldr;</a></p>
-
             <h1>Online prediction and model pipelining for Google BERT</h1>
 
-            <p><small>March 11, 2019</small></p>
+            <p><small>March 11, 2019&mdash;Originally published on <a href="https://medium.com/@cdathuraliya/online-prediction-and-model-pipelining-for-google-bert-8ace3c85b4f6" target="_blank">Medium</a></small></p>
 
             <figure>
-                <img src="/notes/online-prediction-and-model-pipelining-for-google-bert/bert.png" alt="Google BERT">
+                <img src="bert.png" alt="Google BERT">
                 <figcaption><small>syracuse.com/tv/2018/09/bert_ernie_gay_sesame_street.html</small></figcaption>
             </figure>
 
             <p>This is going to be a short one. While others <a href="https://thegradient.pub/openai-please-open-source-your-language-model/" target="_blank">argue over GPT-2</a>, we had to dig a little deeper into <a href="https://arxiv.org/abs/1810.04805" target="_blank">Google BERT</a>. If you are a follower of deep learning research, especially on the NLP side, BERT needs no introduction at this point. Since its initial release last October, dozens more resources have been added highlighting the significance of this work by Google. The <a href="https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html" target="_blank">official blog post</a> itself is a very good resource to understand the basics.</p>
 
-            <p><a href="/notes/online-prediction-and-model-pipelining-for-google-bert/">Continue reading&mldr;</a></p>
+            <p>Besides the significance, I think the code release with good documentation (a not-so-common practice in research, sadly) immensely contributed to the popularity it gained in such a short period. The <a href="https://github.com/google-research/bert" target="_blank">repository</a> covered almost all the essentials, with very few exceptions. One was online prediction support. While I was searching through the issues and pull requests, I found <a href="https://github.com/google-research/bert/issues/94#issuecomment-437883736" target="_blank">this</a> very useful issue comment. For our requirement, we had to implement an additional <a href="https://github.com/google-research/bert/pull/327" target="_blank">data processor for SST-2</a> (we used a custom version for the actual use case), a helper class for online prediction and then use them in a pipeline with multiple BERT models.</p>
 
-            <h1>The biggest challenge of AI is not people or technology</h1>
+            <p>Considering BERT&rsquo;s popularity in multiple downstream NLP tasks, we thought of sharing our extensions with everyone. Of course this is far from a proper code release and I wouldn&rsquo;t call it production-ready. But in case you were looking for the same thing, I hope this would help. I have added a Jupyter Notebook to demonstrate the usage of <a href="https://github.com/cdathuraliya/bert-inference/blob/master/prediction.py" target="_blank">prediction.py</a>. Hope it is simple enough, but do send a PR if you notice anything that needs to be changed.</p>
 
-            <p><small>May 2, 2018</small></p>
-
-            <figure>
-                <img src="/notes/the-biggest-challenge-of-ai-is-not-people-or-technology/ai_engineering.png" alt="Artificial Intelligence + Software Engineering = AI Engineering">
-                <figcaption><small>Image by the author</small></figcaption>
-            </figure>
-
-            <p>Yes, that&rsquo;s correct. Well, I think so and let me explain.</p>
-
-            <p>I think the biggest challenge of AI right now is making it an industry or an engineering field. All the other challenges were there for a while if you really think about it. There can be slowdowns and booms in fundamental research, talent can be in short supply, we still make progress. But I think we are yet to define AI as an industry. And we need to do it right away!</p>
-
-            <p><a href="/notes/the-biggest-challenge-of-ai-is-not-people-or-technology/">Continue reading&mldr;</a></p><br>
+            <p>Thanks <a href="https://github.com/brightmart" target="_blank">@brightmart</a> for opening the issue and for sharing your script! Also kudos to the BERT authors for their amazing work!</p><br>
         </div>
     </body>
 </html>
