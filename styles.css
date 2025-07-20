@@ -23,6 +23,18 @@ a:hover {
     border-bottom: 1px solid #555;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+figcaption {
+    text-align: center;
+    color: #999;
+}
+
 .center {
     margin: auto;
     width: 40%;
