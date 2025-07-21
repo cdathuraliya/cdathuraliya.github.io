@@ -8,7 +8,7 @@ h1 {
     margin-bottom: 0;
 }
 
-ol, p {
+ol, p, ul {
     line-height: 1.75;
     color: #404040;
 }
